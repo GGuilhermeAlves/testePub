@@ -1,0 +1,32 @@
+<!-- Abrir com Live Server -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesquisa de Pokémon</title>
+    <meta charset="utf-8">
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Pesquisa de Pokémon</h1>
+    <div id="pokedex">
+        <div id="pokemon-info">
+            <div id="pokemon-image-container">
+                <img id="pokemon-image">
+            </div>
+            <div id="pokemon-text-container"> 
+                <h2 id="pokemon-name"></h2>
+                <p id="pokemon-base-experience"></p>
+                <p id="pokemon-weight"></p>
+                <p id="pokemon-height"></p>
+                <ul id="pokemon-moves"></ul>
+            </div>
+        </div>
+        <div id="search-container">
+            <input type="text" id="pokemon-input" placeholder="Nome ou ID do Pokémon">
+            <button onclick="fetchPokemon()">Pesquisar</button>
+        </div>
+    </div>
+    <script src="./fetch.js"></script>
+</body>
+</html>
+
